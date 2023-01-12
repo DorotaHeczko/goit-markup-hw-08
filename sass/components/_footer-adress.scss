@@ -1,0 +1,54 @@
+.addres-box {
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        font-style: normal;
+        margin-top: 20px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        a {
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
+    &__contact {
+        color: $contact-item-header-color;
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 1.71;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__contact:hover,
+    &__contact:focus,
+    &--no-underline:hover,
+    &--no-underline:focus {
+        color: $main-color;
+    }
+
+  
+}
+
+.address {
+    text-decoration: none;
+    color: $button-color;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+
+.dark-bg {
+    background: #2f303a;
+    
+
+&--footer-padding {
+    padding: 60px 0;
+}
+}
+.footer-box {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,15 @@
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    color: $main-color;
+    font-size: 26px;
+    line-height: 1.17;
+
+    &__studio {
+        color: $menu-link-color;
+
+        &--white {
+            color: $button-color;
+        }
+    }
+}

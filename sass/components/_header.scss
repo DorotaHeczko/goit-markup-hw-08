@@ -1,0 +1,93 @@
+.header {
+    border-bottom: 2px solid #ececec;
+    padding: 24px 0 25px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        color: $nav-item-color;
+        font-size: 14px;
+        line-height: 1.14;
+        align-items: center;
+        gap: 93px;
+        justify-content: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__nav-list {
+        display: flex;
+        gap: 46px;
+        justify-content: center;
+        align-items: center;
+        color: $nav-item-color;
+        font-size: 14px;
+        line-height: 1.14;
+        list-style: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__menu-link {
+        display: block;
+        color: $menu-link-color;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+    }
+
+    &__menu-link--active {
+        color: $main-color;
+
+        &::after {
+            content: '';
+            background-color: $main-color;
+            position: absolute;
+            width: 53px;
+            height: 4px;
+            top: 46px;
+            border-radius: 2px;
+            left: 0;
+        }
+    }
+
+    &__nav-list a:hover,
+    &__nav-list a:focus {
+        color: $main-color;
+    }
+  
+
+
+    &__contacts {
+        display: flex;
+        gap: 50px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__contact-item {
+        color: $contact-item-header-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        fill: currentColor;
+        &:is(:hover, :focus) {
+            color: $main-color;
+        }
+    }
+
+    &__contact-item-icon {
+        margin-right: 10px;
+    }
+}
+

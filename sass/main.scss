@@ -1,0 +1,15 @@
+@use './utils/variables' as *;
+@import './utils/global';
+@import './components/header';
+@import './components/logo';
+@import './components/order-box-btn';
+@import './components/btn-portfolio.scss';
+@import './components/graphics-box.scss';
+@import './components/articles';
+@import './components/job-card.scss';
+@import './components/photo-list';
+@import './components/footer-adress';
+@import './components/social-media';
+@import './components/footer-newsletter';
+@import './components/backdrop';
+

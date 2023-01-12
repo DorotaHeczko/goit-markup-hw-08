@@ -1,0 +1,77 @@
+figcaption {
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    padding: 20px 24px;
+}
+
+.graphics-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__items-grid {
+        margin: 0px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__items-grid:hover,
+    &__items-grid:focus {
+        border-radius: 4px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &__item {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__throw {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(294px);
+        transition: transform 150ms ease-in-out;
+        background-color: rgba(33, 150, 243, 0.9);
+    }
+
+    &__projects {
+        color: #212121;
+        display: block;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 4px;
+    }
+
+    &__project-name {
+        color: $contact-item-header-color;
+        display: block;
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.87;
+    }
+
+    &__items-grid:hover &__items-grid:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &__items-grid:hover &__throw {
+        transform: translateY(0);
+    }
+
+    &__throw p {
+    color: $button-color;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding: 49px 24px;
+}
+}
+
+

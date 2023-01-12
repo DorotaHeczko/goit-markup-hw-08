@@ -1,0 +1,31 @@
+.photo-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    &__border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        width: 170px;
+        height: 92px;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__border svg {
+        fill: $svg-color;
+        transition: background-color 250ms ease, fill 250ms ease;
+    }
+    &__border:hover,
+    &__border:focus {
+        border: 1px solid $main-color;
+    }
+    &__border:hover > svg {
+        fill: $main-color;
+    }
+    &__border:focus > svg {
+        fill: $main-color;
+    }
+}

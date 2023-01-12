@@ -1,0 +1,192 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__modal {
+        position: relative;
+        margin: auto;
+        width: 528px;
+        min-height: 581px;
+        background-color: $button-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition-property: transform;
+        transition-timing-function: ease-in-out;
+        transition-duration: 600ms;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.172;
+            letter-spacing: 0.03em;
+        }
+    }
+
+    &__label {
+        font-size: 12px;
+        margin-bottom: 4px;
+        margin-top: 10px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: $contact-item-header-color;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon {
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        fill: $menu-link-color;
+    }
+    &__input {
+        width: 448px;
+        height: 40px;
+        padding-left: 33px;
+        background-color: transparent;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__input:focus {
+        border: 1px solid $main-color;
+        border-radius: 4px;
+        outline: none;
+        fill: $main-color;
+    }
+
+    &__comment:hover,
+    &__comment:focus {
+        border: 1px solid $main-color;
+        border-radius: 4px;
+        outline: none;
+        fill: $main-color;
+    }
+
+    &__comment {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        color: $footer-color;
+        font-size: 12px;
+        line-height: 1.172;
+        letter-spacing: 0.01em;
+        height: 120px;
+        appearance: none;
+        padding-top: 12px;
+        padding-left: 16px;
+        margin: 0;
+        resize: none;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__statute {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: $contact-item-header-color;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        a {
+            color: $main-color;
+        }
+    }
+    &__svg-color {
+        position: absolute;
+        opacity: 0;
+        top: -1px;
+        left: -1px;
+    }
+
+    &__send-btn {
+        margin-bottom: 46px;
+        margin-left: 114px;
+        width: 200px;
+        height: 50px;
+        color: $button-color;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: $main-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__modal-checkbox {
+        display: flex;
+        position: relative;
+        width: 16px;
+        height: 15px;
+        border-radius: 2px;
+        border: 1px solid $nav-item-color;
+        margin-left: 8px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &.is-hidden &__modal {
+        transform: translateY(-150%) scale(0.4);
+    }
+
+    &__hidden-checkbox {
+        display: none;
+    }
+
+    &__hidden-checkbox:checked + &__modal-checkbox > &__svg-color {
+        opacity: 1;
+    }
+
+    &__input:focus + &__icon {
+        fill: $main-color;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        background-color: $button-color;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    transition-property: visibility, opacity;
+    transition-timing-function: ease;
+    transition-duration: 250ms;
+    visibility: hidden;
+    pointer-events: none;
+}
