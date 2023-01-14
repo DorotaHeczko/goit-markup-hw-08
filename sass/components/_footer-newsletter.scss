@@ -2,8 +2,6 @@
 .newsletter {
     display: flex;
     flex-direction: column;
-    margin-top: 12px;
-    margin-left: 74px;
     line-height: 1.14;
     font-size: 14px;
     text-transform: uppercase;
@@ -50,4 +48,7 @@
 
 .news-box {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }

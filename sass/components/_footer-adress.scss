@@ -1,6 +1,9 @@
 .addres-box {
     display: flex;
     flex-direction: column;
+   
+    
+    
 
     &__list {
         display: flex;
@@ -50,5 +53,7 @@
 }
 .footer-box {
     display: flex;
+    flex-direction: column;
     gap: 10px;
+    
 }
