@@ -1,7 +1,8 @@
-
 .newsletter {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     line-height: 1.14;
     font-size: 14px;
     text-transform: uppercase;
@@ -10,7 +11,7 @@
     &__box {
         color: $social-media-color;
         height: 50px;
-        width: 358px;
+        width: 450px;
         padding-left: 16px;
         background-color: transparent;
         font-size: 16px;
@@ -30,7 +31,6 @@
         width: 200px;
         height: 50px;
         letter-spacing: 0.06em;
-        margin-left: 12px;
         font-weight: 700;
         color: $button-color;
         background-color: $main-color;
@@ -48,7 +48,7 @@
 
 .news-box {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }

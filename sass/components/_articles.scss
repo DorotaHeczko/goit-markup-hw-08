@@ -1,19 +1,23 @@
 .articles {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding-top: 7px;
     list-style: none;
     max-width: 480px;
     
     
+    
 
     &__title {
         text-decoration: none;
+        text-align: center;
         color: $nav-item-color;
         font-size: 14px;
         line-height: 1.14;
         margin-bottom: 9.31px;
         margin-top: 30px;
+        
         
         
     }
@@ -23,14 +27,13 @@
         color: $contact-item-header-color;
         font-size: 14px;
         line-height: 1.71;
+        margin-bottom: 20px;
+       
     }
 
   
 }
 
-.container >  h2 {
-    display: none;
-}
 
 .job-descr {
     display: flex;
@@ -39,7 +42,7 @@
     gap: 30px;
     position: relative;
     list-style: none;
-    display: none;
+   
     
 
     
@@ -62,4 +65,8 @@
     &__position {
         position: relative;
     }
+}
+
+.section-block {
+    display: none;
 }

@@ -26,23 +26,9 @@
         <header class="header">
             <div class="container header__wrapper">
                 <!-- BUTTON MOBILE MENU -->
-                <button
-                    class="menu-toggle js-open-menu"
-                    aria-expanded="false"
-                    aria-controls="mobile-menu"
-                >
-                    <svg
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"
-                        ></path>
+                <button class="menu__toggle js-open-menu">
+                    <svg width="40" height="40" class="menu__button">
+                        <use href="./images/icons.svg#icon-menu_40px"></use>
                     </svg>
                 </button>
                 <!-- NAWIGACJA HEADER -->
@@ -85,7 +71,7 @@
         <main>
             <!-- SEKCJA Z BUTTONEM -->
 
-            <section class="section order-box">
+            <section class="order-box">
                 <div class="order-box__wrapper container">
                     <h1 class="order-box__heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                     <button class="order-box__btn" type="button" data-modal-open>
@@ -100,7 +86,7 @@
                 <div class="container">
                     <ul class="articles">
                         <li>
-                            <svg width="270" height="120">
+                            <svg width="450" height="120">
                                 <use href="./images/icons.svg#icon-Group-1"></use>
                             </svg>
                             <h2 class="articles__title">LOREM IPSUM</h2>
@@ -111,7 +97,7 @@
                         </li>
 
                         <li>
-                            <svg width="270" height="120">
+                            <svg width="450" height="120">
                                 <use href="./images/icons.svg#icon-Group-2"></use>
                             </svg>
                             <h2 class="articles__title">LOREM IPSUM</h2>
@@ -122,7 +108,7 @@
                         </li>
 
                         <li>
-                            <svg width="270" height="120">
+                            <svg width="450" height="120">
                                 <use href="./images/icons.svg#icon-Group-3"></use>
                             </svg>
                             <h2 class="articles__title">LOREM IPSUM</h2>
@@ -132,7 +118,7 @@
                             </p>
                         </li>
                         <li>
-                            <svg width="270" height="120">
+                            <svg width="450" height="120">
                                 <use href="./images/icons.svg#icon-Group-4"></use>
                             </svg>
                             <h2 class="articles__title">LOREM IPSUM</h2>
@@ -147,7 +133,7 @@
 
             <!-- SEKCJA CZYM SIE ZAJMUJEMY -->
 
-            <section class="section">
+            <section class="section section-block">
                 <div class="container">
                     <h2 class="title">Czym się zajmujemy</h2>
 
@@ -193,8 +179,8 @@
                             <img
                                 src="images/product-designer.jpg"
                                 alt="product-designer.jpg"
-                                width="270"
-                                height="260"
+                                width="450"
+                                height="460"
                             />
                             <div class="job__bg">
                                 <span class="job__worker">John Doe</span>
@@ -227,8 +213,8 @@
                             <img
                                 src="images/frontend-developer.jpg"
                                 alt="frontend-developer"
-                                width="270"
-                                height="260"
+                                width="450"
+                                height="460"
                             />
                             <div class="job__bg">
                                 <span class="job__worker">John Doe</span>
@@ -261,8 +247,8 @@
                             <img
                                 src="images/marketing.jpg"
                                 alt="marketing"
-                                width="270"
-                                height="260"
+                                width="450"
+                                height="460"
                             />
                             <div class="job__bg">
                                 <span class="job__worker">John Doe</span>
@@ -295,8 +281,8 @@
                             <img
                                 src="images/ui-designer.jpg"
                                 alt="ui-designer"
-                                width="270"
-                                height="260"
+                                width="450"
+                                height="460"
                             />
                             <div class="job__bg">
                                 <span class="job__worker">John Doe</span>
@@ -338,14 +324,14 @@
                         <ul class="photo-list">
                             <li>
                                 <a class="photo-list__border" href="#">
-                                    <svg width="170" height="92">
+                                    <svg>
                                         <use href="./images/icons.svg#icon-Client-1"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li>
                                 <a class="photo-list__border" href="#">
-                                    <svg width="170" height="92">
+                                    <svg>
                                         <use href="./images/icons.svg#icon-Client-2"></use>
                                     </svg>
                                 </a>
@@ -353,14 +339,14 @@
 
                             <li>
                                 <a class="photo-list__border" href="#">
-                                    <svg width="170" height="92">
+                                    <svg>
                                         <use href="./images/icons.svg#icon-Client-3"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li>
                                 <a class="photo-list__border" href="#">
-                                    <svg width="170" height="92">
+                                    <svg>
                                         <use href="./images/icons.svg#icon-Client-4"></use>
                                     </svg>
                                 </a>
@@ -374,7 +360,7 @@
                             </li>
                             <li>
                                 <a class="photo-list__border" href="#">
-                                    <svg width="170" height="92">
+                                    <svg>
                                         <use href="./images/icons.svg#icon-Client-6"></use>
                                     </svg>
                                 </a>
@@ -384,6 +370,7 @@
                 </div>
             </section>
         </main>
+        <!-- SEKCJA BUTTON -->
 
         <!-- SEKCJA FOOTER ADRES -->
 
@@ -454,39 +441,6 @@
                                     </svg>
                                 </a>
                             </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- SEKCJA BUTTON -->
-
-                <div class="menu-container js-menu-container" id="mobile-menu">
-                    <button class="menu-toggle js-close-menu">
-                        <svg
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"
-                            ></path>
-                        </svg>
-                    </button>
-                    <div class="menu__container">
-                        <ul class="mobile-menu">
-                            <li>
-                                <a class="header__menu-link" href="#"
-                                    >Agencja</a
-                                >
-                            </li>
-                            <li>
-                                <a class="header__menu-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li><a class="header__menu-link" href="#">Kontakt</a></li>
                         </ul>
                     </div>
                 </div>
@@ -567,13 +521,33 @@
                 <button type="button" class="backdrop__close-btn" data-modal-close>&times;</button>
             </div>
         </div>
-        <script src="./js/modal.js"></script>
-        <script
-            defer
-            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-            crossorigin="anonymous"
-        ></script>
+        <div class="menu js-menu-container">
+            <button class="menu__toggle js-close-menu">
+                <svg class="icon" width="18" height="18">
+          <use href="images/icons.svg#icon-close_40px"></use>
+        </svg>
+            </button>
+            <div class="menu__box">
+                <ul class="menu__contact">
+                    <li><a href="index.html">Agencja</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="tutorial.html">Tutorial</a></li>
+                </ul>
+                <div class="menu__contact">
+                    <a href="tel:+48111111111" class="menu__link menu__link--active">
+                        +48 111 111 111
+                    </a>
+                    <a href="mailto:info@devstudio.com" class="menu__email"> info@devstudio.com </a>
+                    <ul class="menu__media">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <script defer src="js/mobile-menu.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>

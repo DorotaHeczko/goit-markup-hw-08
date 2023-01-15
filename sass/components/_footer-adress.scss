@@ -1,9 +1,7 @@
 .addres-box {
     display: flex;
+    text-align: center;
     flex-direction: column;
-   
-    
-    
 
     &__list {
         display: flex;
@@ -31,8 +29,6 @@
     &--no-underline:focus {
         color: $main-color;
     }
-
-  
 }
 
 .address {
@@ -42,18 +38,16 @@
     line-height: 1.71;
 }
 
-
 .dark-bg {
     background: #2f303a;
-    
-
-&--footer-padding {
-    padding: 60px 0;
-}
+    max-width: 480px;
+    &--footer-padding {
+        padding: 60px 0;
+    }
 }
 .footer-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
-    
 }
