@@ -1,6 +1,6 @@
 .header {
     border-bottom: 2px solid #ececec;
-    padding: 24px 0 25px;
+    padding: 24px 0;
     max-width: 480px;
 
     &__wrapper {
@@ -9,6 +9,7 @@
         justify-content: space-between;
         align-items: center;
         max-width: 480px;
+        
     }
 
     &__nav {
