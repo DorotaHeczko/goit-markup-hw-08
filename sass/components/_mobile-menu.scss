@@ -72,7 +72,7 @@
         cursor: pointer;
         border: none;
         outline: none;
-        :hover {
+        > :hover {
             color: $main-color;
         }
     }
