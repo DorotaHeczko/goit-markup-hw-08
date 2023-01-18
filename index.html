@@ -26,11 +26,10 @@
         <header class="header">
             <div class="container header__wrapper">
                 <!-- BUTTON MOBILE MENU -->
-                <button class="menu__toggle js-open-menu" aria-expanded="true" aria-controls="mobile-menu">
+                <button class="menu__toggle js-open-menu">
                     <svg width="40" height="40" class="menu__button">
                         <use href="./images/icons.svg#icon-menu_40px"></use>
                     </svg>
-                    
                 </button>
                 <!-- NAWIGACJA HEADER -->
                 <nav class="header__nav">
@@ -177,11 +176,16 @@
                     <h2 class="title">Nasz zespół</h2>
                     <ul class="job">
                         <li class="job__card">
-                            <img
+                            <img class="job__img"
                                 src="images/product-designer.jpg"
                                 alt="product-designer.jpg"
-                                width="450"
-                                height="460"
+                                srcset="images/product-designer.jpg   270w
+                             images/product-designer-2.jpg         540w
+                             images/product-designer-tablet.jpg     354w
+                             images/product-designer-tablet-2.jpg    708w
+                             images/product-designer-mobile.jpg      450w
+                              images/product-designer-mobile-2.jpg    900w                  "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                             />
                             <div class="job__bg">
                                 <span class="job__worker">John Doe</span>
@@ -211,11 +215,16 @@
                             </div>
                         </li>
                         <li class="job__card">
-                            <img
+                            <img class="job__img"
                                 src="images/frontend-developer.jpg"
                                 alt="frontend-developer"
-                                width="450"
-                                height="460"
+                                srcset="images/frontend-developer.jpg   270w
+                             images/frontend-developer-2.jpg         540w
+                             images/frontend-developer-tablet.jpg     354w
+                             images/frontend-developer-tablet-2.jpg    708w
+                             images/frontend-developer-mobile.jpg      450w
+                             images/frontend-developer-mobile-2.jpg    900w                  "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                             />
                             <div class="job__bg">
                                 <span class="job__worker">John Doe</span>
@@ -245,11 +254,16 @@
                             </div>
                         </li>
                         <li class="job__card">
-                            <img
+                            <img class="job__img"
                                 src="images/marketing.jpg"
                                 alt="marketing"
-                                width="450"
-                                height="460"
+                                srcset="images/marketing.jpg   270w
+                             images/marketing-2.jpg         540w
+                             images/marketing-tablet.jpg     354w
+                             images/marketing-tablet-2.jpg    708w
+                             images/marketing-mobile.jpg      450w
+                             images/marketing-mobile-2.jpg    900w                  "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                             />
                             <div class="job__bg">
                                 <span class="job__worker">John Doe</span>
@@ -279,12 +293,18 @@
                             </div>
                         </li>
                         <li class="job__card">
-                            <img
+                            <img class="job__img"
                                 src="images/ui-designer.jpg"
                                 alt="ui-designer"
-                                width="450"
-                                height="460"
+                                srcset="images/ui-designer.jpg   270w
+                             images/ui-designer-2.jpg         540w
+                             images/ui-designer-tablet.jpg     354w
+                             images/ui-designer-tablet-2.jpg    708w
+                             images/ui-designer-mobile.jpg      450w
+                             images/ui-designer-mobile-2.jpg    900w                  "
+                                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                             />
+                        
                             <div class="job__bg">
                                 <span class="job__worker">John Doe</span>
                                 <span class="job__position">Product Designer</span>
@@ -371,7 +391,6 @@
                 </div>
             </section>
         </main>
-       
 
         <!-- SEKCJA FOOTER ADRES -->
 
@@ -525,8 +544,8 @@
         <div class="menu js-menu-container">
             <button class="menu__toggle js-close-menu">
                 <svg class="icon" width="18" height="18">
-          <use href="images/icons.svg#icon-close_40px"></use>
-        </svg>
+                    <use href="images/icons.svg#icon-close_40px"></use>
+                </svg>
             </button>
             <div class="menu__box">
                 <ul class="menu__contact">
@@ -535,10 +554,10 @@
                     <li><a class="menu__nav" href="tutorial.html">Tutorial</a></li>
                 </ul>
                 <div class="menu__contact menu__contact--box">
-                    <a class="menu__tel" href="tel:+48111111111">
-                        +48 111 111 111
-                    </a>
-                    <a class="menu__tel" href="mailto:info@devstudio.com" class="menu__email">info@devstudio.com</a>
+                    <a class="menu__tel" href="tel:+48111111111"> +48 111 111 111 </a>
+                    <a class="menu__tel" href="mailto:info@devstudio.com" class="menu__email"
+                        >info@devstudio.com</a
+                    >
                     <ul class="menu__media">
                         <li><a class="menu__social" href="#">Instagram</a></li>
                         <li><a class="menu__social" href="#">Twitter</a></li>
