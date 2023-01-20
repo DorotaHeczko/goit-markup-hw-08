@@ -1,6 +1,7 @@
 .header {
     border-bottom: 2px solid #ececec;
-    padding: 24px 0;
+    padding: 1rem 0px;
+    margin: 0 auto;
     max-width: 480px;
 
     &__wrapper {
@@ -9,7 +10,6 @@
         justify-content: space-between;
         align-items: center;
         max-width: 480px;
-        
     }
 
     &__nav {
@@ -67,8 +67,6 @@
     &__nav-list a:focus {
         color: $main-color;
     }
-  
-
 
     &__contacts {
         display: flex;
@@ -96,4 +94,3 @@
         margin-right: 10px;
     }
 }
-

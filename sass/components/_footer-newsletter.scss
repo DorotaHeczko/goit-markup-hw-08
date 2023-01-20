@@ -1,17 +1,19 @@
 .newsletter {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 1.14;
     font-size: 14px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     font-weight: 700;
 
     &__box {
         color: $social-media-color;
-        height: 50px;
-        width: 450px;
+        width: 100%;
+         height: 50px;
+        margin: 20px 0;
         padding-left: 16px;
         background-color: transparent;
         font-size: 16px;

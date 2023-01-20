@@ -1,6 +1,6 @@
 @use './utils/variables' as *;
-@import './utils/global';
 @import './utils/mixins';
+@import './utils/global';
 @import './components/header';
 @import './components/logo';
 @import './components/order-box-btn';

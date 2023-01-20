@@ -2,7 +2,6 @@ ul {
     list-style: none;
 }
 
-
 body {
     font-family: 'Roboto', sans-serif;
     background-color: $button-color;
@@ -27,15 +26,15 @@ svg {
 }
 
 .container {
-    width: 100%;
-    padding: 0px 15px 0px 15px;
+    max-width: 480px;
+    padding: 0 15px;
     margin: 0 auto;
 
+ 
 }
 
 .section {
     padding: 94px 0px;
-   
 }
 
 *:focus {
