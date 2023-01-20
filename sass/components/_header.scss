@@ -2,14 +2,14 @@
     border-bottom: 2px solid #ececec;
     padding: 1rem 0px;
     margin: 0 auto;
-    max-width: 480px;
+    
 
     &__wrapper {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        max-width: 480px;
+       
     }
 
     &__nav {
