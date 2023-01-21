@@ -11,6 +11,7 @@
 
         @include tablet {
             flex-direction: row;
+            padding: 21px 0;
         }
 
         @include desktop {
@@ -72,13 +73,13 @@
             position: absolute;
             width: 53px;
             height: 4px;
-            top: 40px;
+            top: 64px;
             border-radius: 2px;
             left: 0;
-            
+            @include desktop {
+                top: 58px;
+            }
         }
-
-
     }
 
     &__nav-list a:hover,
@@ -93,22 +94,17 @@
         justify-content: flex-end;
         align-items: center;
 
-
-           @include tablet {
+        @include tablet {
             display: flex;
             flex-direction: column;
             gap: 10px;
             align-items: flex-start;
-            
         }
 
         @include desktop {
             display: flex;
             flex-direction: row;
-          
         }
-
-        
     }
 
     &__contact-item {
@@ -123,9 +119,6 @@
         &:is(:hover, :focus) {
             color: $main-color;
         }
-
-        
-      
     }
 
     &__contact-item-icon {

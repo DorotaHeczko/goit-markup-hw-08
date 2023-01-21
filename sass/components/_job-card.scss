@@ -15,6 +15,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+       padding-left: 0;
     }
     @include desktop {
        flex-direction: row;
