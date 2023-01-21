@@ -12,9 +12,27 @@
         url('../images/img-team.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
+    
+
+    @include tablet {
+         background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url('/images/img-team-tablet.jpg');
+    }
+
+    @include desktop {
+         background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url('/images/img-team-desktop.jpg');
+       
+    }
+
 
     &__wrapper {
         display: flex;
@@ -31,8 +49,16 @@
         padding-right: 58px;
         padding-left: 57px;
         text-align: center;
-    }
 
+        @include tablet {
+            padding: 118px 201px;
+        }
+
+        @include desktop {
+            font-size: 44px;
+            padding: 106px 252px;
+        }
+    }
     &__btn {
         width: 200px;
         height: 50px;
@@ -50,5 +76,10 @@
         margin-top: 30px;
         margin-bottom: 118px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include desktop {
+           
+            margin-bottom: 200px;
+        }
     }
 }

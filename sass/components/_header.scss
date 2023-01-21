@@ -2,14 +2,20 @@
     border-bottom: 2px solid #ececec;
     padding: 1rem 0px;
     margin: 0 auto;
-    
 
     &__wrapper {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-       
+
+        @include tablet {
+            flex-direction: row;
+        }
+
+        @include desktop {
+            flex-direction: row;
+        }
     }
 
     &__nav {
@@ -34,6 +40,15 @@
         list-style: none;
         display: none;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @include tablet {
+            display: flex;
+            gap: 60px;
+        }
+
+        @include desktop {
+            display: flex;
+            gap: 46px;
+        }
     }
 
     &__menu-link {
@@ -57,7 +72,7 @@
             position: absolute;
             width: 53px;
             height: 4px;
-            top: 46px;
+            top: 40px;
             border-radius: 2px;
             left: 0;
         }
@@ -74,6 +89,22 @@
         gap: 50px;
         justify-content: flex-end;
         align-items: center;
+
+
+           @include tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+          
+        }
+
+        
     }
 
     &__contact-item {
@@ -88,6 +119,9 @@
         &:is(:hover, :focus) {
             color: $main-color;
         }
+
+        
+      
     }
 
     &__contact-item-icon {

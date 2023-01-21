@@ -5,6 +5,8 @@
     inset: 0;
     background-color: $button-color;
     max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
     padding: 2rem;
     visibility: hidden;
     opacity: 0;
@@ -72,14 +74,19 @@
         cursor: pointer;
         border: none;
         outline: none;
-        > :hover {
-            color: $main-color;
+        background-color: transparent;
+
+        @include tablet {
+            display: none;
         }
     }
-  
+
+    &__toggle svg:hover,
+    &__toggle svg:focus {
+        background-color: $main-color;
+        fill: $button-color;
+    }
 }
-
-
 
 .menu.is-open {
     visibility: visible;
