@@ -3,7 +3,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 480px;
+   
+
+    @include desktop {
+    flex-wrap: nowrap;
+    }
 
     &__border {
         display: flex;

@@ -30,8 +30,11 @@
        
         }
     }
-
-
+&__item {
+    @include tablet {
+        max-width: 354px;
+    }
+}
 
     &__title {
         text-decoration: none;
@@ -74,6 +77,10 @@
         position: absolute;
         bottom: 0;
         left: 0;
+
+        @include desktop {
+            position: static;
+        }
     }
     &__position {
         position: relative;
@@ -82,4 +89,9 @@
 
 .section-block {
     display: none;
+
+    @include desktop {
+        display: flex;
+    
+    }
 }

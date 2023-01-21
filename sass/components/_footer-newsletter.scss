@@ -11,12 +11,36 @@
 
     @include tablet {
         justify-content: flex-start;
+        
     }
 
     @include desktop {
-        justify-content: flex-start;
-        margin-top: 12px;
-        margin-left: 74px;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 94px;
+    
+ 
+    }
+
+
+
+    &__title {
+         color: $button-color;
+        display: flex;
+        line-height: 1.14;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 20px;
+        
+        @include tablet {
+            margin-bottom: 0;
+        }
+
+        @include desktop {
+            margin-top: 56px;
+            margin-right: 358px;
+        }
     }
 
     &__box {
@@ -39,6 +63,7 @@
         }
 
         @include desktop {
+           
             height: 50px;
             width: 358px;
         }
@@ -62,6 +87,7 @@
 
         @include desktop {
             margin-left: 12px;
+    
         }
     }
 
@@ -80,7 +106,8 @@
 
     @include desktop {
         flex-direction: row;
-        justify-content: flex-start;
+        align-items: center;
         gap: 0;
+        flex-wrap: nowrap;
     }
 }
