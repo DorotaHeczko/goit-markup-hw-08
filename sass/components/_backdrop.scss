@@ -6,15 +6,12 @@
     justify-content: center;
     align-items: center;
 
-
-    @include tablet {
-        max-width: 450px;
-    }
-  
-
     &__modal {
         position: relative;
         margin: auto;
+        padding: 40px;
+        max-width: 450px;
+        width: 100%;
         background-color: $button-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -22,14 +19,21 @@
         transition-property: transform;
         transition-timing-function: ease-in-out;
         transition-duration: 600ms;
+
+        @include tablet {
+            max-width: 450px;
+            width: 100%;
+        }
+
+        @include desktop {
+            max-width: 528px;
+            width: 100%;
+        }
     }
 
     &__box {
         display: flex;
         flex-direction: column;
-        padding-top: 40px;
-        padding-right: 40px;
-        padding-left: 40px;
 
         p {
             text-align: center;
@@ -131,8 +135,8 @@
     }
 
     &__send-btn {
-        margin-bottom: 46px;
-        margin-left: 114px;
+        display: block;
+        margin: 0 auto;
         width: 200px;
         height: 50px;
         color: $button-color;
