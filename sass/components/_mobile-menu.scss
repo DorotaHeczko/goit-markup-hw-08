@@ -37,11 +37,16 @@
         flex-direction: column;
         gap: 64px;
     }
-    &__nav {
+    &__navigation {
         color: $menu-link-color;
         text-decoration: none;
         line-height: 46px;
         font-size: 40px;
+    }
+
+     &__navigation--color {
+        color: $main-color;
+        
     }
 
     &__nav:hover {
