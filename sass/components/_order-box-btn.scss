@@ -1,6 +1,6 @@
 .order-box {
     display: flex;
-    
+    background-size: cover;
     background: $button-order-color;
     flex-direction: column;
     justify-content: center;
@@ -12,10 +12,10 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ),
-        url('../../images/img-team.jpg');
+        url('/images/img-team.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../../images/img-team-2.jpg');
+        background-image: url('/images/img-team-2.jpg');
     }
 
     @include tablet {
@@ -24,23 +24,22 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url('../../images/img-team-tablet.jpg');
+            url('/images/img-team-tablet.jpg');
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url('../../images/img-team-tablet-2.jpg');
+            background-image: url('/images/img-team-tablet-2.jpg');
         }
     }
 
     @include desktop {
-        padding: 90px;
         background-image: linear-gradient(
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url('../../images/img-team-desktop.jpg');
+            url('/images/img-team-desktop.jpg');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url('../../images/img-team-desktop-2.jpg');
+            background-image: url('/images/img-team-desktop-2.jpg');
         }
     }
 
@@ -49,6 +48,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+         background-size: cover;
     }
 
     &__heading {
