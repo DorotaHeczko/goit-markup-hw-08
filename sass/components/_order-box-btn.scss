@@ -49,16 +49,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-size: cover;
+       
     }
 
     &__heading {
         color: $button-color;
         font-size: 26px;
         line-height: 1.36;
+        letter-spacing: 0.06em;;
         padding-top: 118px;
-        padding-right: 58px;
-        padding-left: 57px;
+        padding-right: 43px;
+        padding-left: 42px;
         text-align: center;
 
         @include tablet {
