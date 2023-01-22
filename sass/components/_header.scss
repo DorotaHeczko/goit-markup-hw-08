@@ -3,6 +3,14 @@
     padding: 10px 0;
     margin: 0 auto;
 
+    @include tablet {
+        padding: 21px 0;
+    }
+
+    @include desktop {
+        padding: 25px 0 24px;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: row-reverse;
@@ -11,7 +19,6 @@
 
         @include tablet {
             flex-direction: row;
-           
         }
 
         @include desktop {
@@ -74,11 +81,11 @@
             position: absolute;
             width: 53px;
             height: 4px;
-            top: 40px;
+            top: 48px;
             border-radius: 2px;
             left: 0;
             @include desktop {
-                top: 34px;
+                top: 46px;
             }
         }
     }

@@ -23,6 +23,7 @@
         display: flex;
         flex-direction: column;
         gap: 36px;
+
     }
 
     &__contact {
@@ -44,6 +45,9 @@
     }
 
     &__nav:hover {
+        color: $main-color;
+    }
+    &__nav:focus {
         color: $main-color;
     }
 
@@ -95,7 +99,7 @@
 
     &__toggle svg:hover,
     &__toggle svg:focus {
-        background-color: $main-color;
+        fill: $main-color;
         fill: $button-color;
     }
 }
