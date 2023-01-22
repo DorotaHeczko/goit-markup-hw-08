@@ -1,12 +1,12 @@
 .order-box {
     display: flex;
-    background-size: cover;
     background: $button-order-color;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4),
@@ -19,6 +19,7 @@
     }
 
     @include tablet {
+       
         background-image: linear-gradient(
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
@@ -32,7 +33,6 @@
     }
 
     @include desktop {
-       
         background-image: linear-gradient(
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
@@ -49,14 +49,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-       
     }
 
     &__heading {
         color: $button-color;
         font-size: 26px;
         line-height: 1.36;
-        letter-spacing: 0.06em;;
+        letter-spacing: 0.06em;
         padding-top: 118px;
         padding-right: 43px;
         padding-left: 42px;
