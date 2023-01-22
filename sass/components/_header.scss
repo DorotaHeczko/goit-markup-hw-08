@@ -1,6 +1,6 @@
 .header {
     border-bottom: 2px solid #ececec;
-    padding: 1rem 0px;
+    padding: 10px 0;
     margin: 0 auto;
 
     &__wrapper {
@@ -11,7 +11,7 @@
 
         @include tablet {
             flex-direction: row;
-            padding: 21px 0;
+           
         }
 
         @include desktop {
@@ -50,6 +50,7 @@
             display: flex;
             gap: 46px;
         }
+
     }
 
     &__menu-link {
@@ -73,11 +74,11 @@
             position: absolute;
             width: 53px;
             height: 4px;
-            top: 64px;
+            top: 40px;
             border-radius: 2px;
             left: 0;
             @include desktop {
-                top: 58px;
+                top: 34px;
             }
         }
     }
@@ -123,5 +124,17 @@
 
     &__contact-item-icon {
         margin-right: 10px;
+    }
+
+    &__hamburger {
+        color: $menu-link-color;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        @include tablet {
+            display: none;
+        }
     }
 }

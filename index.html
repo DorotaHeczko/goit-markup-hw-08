@@ -26,7 +26,7 @@
         <header class="header">
             <div class="container header__wrapper">
                 <!-- BUTTON MOBILE MENU -->
-                <button class="menu__toggle js-open-menu">
+                <button class="header__hamburger js-open-menu">
                     <svg width="40" height="40">
                         <use href="./images/icons.svg#icon-menu_40px-1"></use>
                     </svg>
@@ -314,12 +314,14 @@
                                 class="job__img"
                                 src="images/ui-designer.jpg"
                                 alt="ui-designer"
-                                srcset="images/ui-designer.jpg   270w,
-                             images/ui-designer-2.jpg         540w,
-                             images/ui-designer-tablet.jpg     354w,
-                             images/ui-designer-tablet-2.jpg    708w,
-                             images/ui-designer-mobile.jpg      450w,
-                             images/ui-designer-mobile-2.jpg    900w                  "
+                                srcset="
+                                    images/ui-designer.jpg          270w,
+                                    images/ui-designer-2.jpg        540w,
+                                    images/ui-designer-tablet.jpg   354w,
+                                    images/ui-designer-tablet-2.jpg 708w,
+                                    images/ui-designer-mobile.jpg   450w,
+                                    images/ui-designer-mobile-2.jpg 900w
+                                "
                                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px , 100vw"
                             />
 
@@ -563,26 +565,28 @@
         </div>
         <div class="menu js-menu-container">
             <button class="menu__toggle js-close-menu">
-                <svg class="menu__icon" width="40" height="40">
+                <svg width="40" height="40">
                     <use href="images/icons.svg#icon-close_40px"></use>
                 </svg>
             </button>
             <div class="menu__box">
-                <ul class="menu__contact">
+                <ul class="menu__nav">
                     <li><a class="menu__nav" href="index.html">Agencja</a></li>
                     <li><a class="menu__nav" href="portfolio.html">Portfolio</a></li>
                     <li><a class="menu__nav" href="tutorial.html">Kontakt</a></li>
                 </ul>
-                <div class="menu__contact">
-                    <a class="menu__tel" href="tel:+48111111111"> +48 111 111 111 </a>
-                    <a class="menu__mail" href="mailto:info@devstudio.com" class="menu__email"
-                        >info@devstudio.com</a
-                    >
+                <div class="menu__container">
+                    <div class="menu__contact">
+                        <a class="menu__tel" href="tel:+48111111111"> +48 111 111 111 </a>
+                        <a class="menu__mail" href="mailto:info@devstudio.com" class="menu__email"
+                            >info@devstudio.com</a
+                        >
+                    </div>
                     <ul class="menu__media">
-                        <li><a class="menu__social" href="#">Instagram</a></li>
-                        <li><a class="menu__social" href="#">Twitter</a></li>
-                        <li><a class="menu__social" href="#">Facebook</a></li>
-                        <li><a class="menu__social" href="#">Linkedln</a></li>
+                        <li class="menu__list"><a class="menu__social" href="#">Instagram</a></li>
+                        <li class="menu__list"><a class="menu__social" href="#">Twitter</a></li>
+                        <li class="menu__list"><a class="menu__social" href="#">Facebook</a></li>
+                        <li class="menu__list"><a class="menu__social" href="#">Linkedln</a></li>
                     </ul>
                 </div>
             </div>

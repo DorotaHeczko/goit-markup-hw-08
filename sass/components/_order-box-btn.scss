@@ -1,17 +1,22 @@
 .order-box {
     display: flex;
+    
     background: $button-order-color;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ),
-        url('../images/img-team.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+        url('../../images/img-team.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../../images/img-team-2.jpg');
+    }
 
     @include tablet {
         background-image: linear-gradient(
@@ -19,18 +24,24 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url('/images/img-team-tablet.jpg');
-        height: 400px;
+            url('../../images/img-team-tablet.jpg');
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url('../../images/img-team-tablet-2.jpg');
+        }
     }
 
     @include desktop {
+        padding: 90px;
         background-image: linear-gradient(
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
             ),
-            url('/images/img-team-desktop.jpg');
-            height: 600px;
+            url('../../images/img-team-desktop.jpg');
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url('../../images/img-team-desktop-2.jpg');
+        }
     }
 
     &__wrapper {
@@ -51,7 +62,7 @@
 
         @include tablet {
             padding-top: 118px;
-           text-align: center;
+            text-align: center;
         }
 
         @include desktop {
@@ -76,9 +87,5 @@
         margin-top: 30px;
         margin-bottom: 118px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        @include desktop {
-            
-        }
     }
 }
